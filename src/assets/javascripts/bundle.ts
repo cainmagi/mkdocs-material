@@ -63,7 +63,8 @@ import {
 import {
   SearchIndex,
   setupClipboardJS,
-  setupInstantLoading
+  setupInstantLoading,
+  setupVersionSelector
 } from "./integrations"
 import {
   patchIndeterminate,
@@ -106,6 +107,10 @@ setupClipboardJS({ alert$ })
 /* Set up instant loading, if enabled */
 if (feature("navigation.instant"))
   setupInstantLoading({ document$, location$, viewport$ })
+
+/* Set up version selector */
+if (config.version?.provider === "mike")
+  setupVersionSelector()
 
 /* Always close drawer and search on navigation */
 merge(location$, target$)
