@@ -287,7 +287,7 @@ viewports._
 Following is a list of type qualifiers provided by Material for MkDocs, whereas
 the default type, and thus fallback for unknown type qualifiers, is `note`:
 
-`note`{: #note }, `seealso`
+`note`{ #note }, `seealso`
 
 :   !!! note
 
@@ -295,7 +295,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-`abstract`{: #abstract }, `summary`, `tldr`
+`abstract`{ #abstract }, `summary`, `tldr`
 
 :   !!! abstract
 
@@ -303,7 +303,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-`info`{: #info }, `todo`
+`info`{ #info }, `todo`
 
 :   !!! info
 
@@ -311,7 +311,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-`tip`{: #tip }, `hint`, `important`
+`tip`{ #tip }, `hint`, `important`
 
 :   !!! tip
 
@@ -319,7 +319,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-`success`{: #success }, `check`, `done`
+`success`{ #success }, `check`, `done`
 
 :   !!! success
 
@@ -327,7 +327,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-`question`{: #question }, `help`, `faq`
+`question`{ #question }, `help`, `faq`
 
 :   !!! question
 
@@ -335,7 +335,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-`warning`{: #warning }, `caution`, `attention`
+`warning`{ #warning }, `caution`, `attention`
 
 :   !!! warning
 
@@ -343,7 +343,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-`failure`{: #failure }, `fail`, `missing`
+`failure`{ #failure }, `fail`, `missing`
 
 :   !!! failure
 
@@ -351,7 +351,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-`danger`{: #danger }, `error`
+`danger`{ #danger }, `error`
 
 :   !!! danger
 
@@ -359,7 +359,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-`bug`{: #bug }
+`bug`{ #bug }
 
 :   !!! bug
 
@@ -367,7 +367,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-`example`{: #example }
+`example`{ #example }
 
 :   !!! example
 
@@ -375,7 +375,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-`quote`{: #quote }, `cite`
+`quote`{ #quote }, `cite`
 
 :   !!! quote
 
@@ -402,6 +402,7 @@ following CSS to an [additional stylesheet][14]:
 .md-typeset .pied-piper > .admonition-title,
 .md-typeset .pied-piper > summary {
   background-color: rgba(43, 155, 70, 0.1);
+  border-color: rgb(43, 155, 70);
 }
 .md-typeset .pied-piper > .admonition-title::before,
 .md-typeset .pied-piper > summary::before {
@@ -426,6 +427,7 @@ colors. [You can even add animations][15].
   .md-typeset .pied-piper > .admonition-title,
   .md-typeset .pied-piper > summary {
     background-color: rgba(43, 155, 70, 0.1);
+    border-color: rgb(43, 155, 70);
   }
   .md-typeset .pied-piper > .admonition-title::before,
   .md-typeset .pied-piper > summary::before {
@@ -454,4 +456,4 @@ _Result_:
 
   [13]: https://github.com/squidfunk/mkdocs-material/tree/master/material/.icons
   [14]: ../customization.md#additional-css
-  [15]: https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  [15]: ./icons-emojis.md#with-animations

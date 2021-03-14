@@ -37,6 +37,31 @@ export interface Version {
 }
 
 /* ----------------------------------------------------------------------------
+ * Helper functions
+ * ------------------------------------------------------------------------- */
+
+/**
+ * Render a version
+ *
+ * @param version - Version
+ *
+ * @returns Element
+ */
+function renderVersion(version: Version): HTMLElement {
+  const config = configuration()
+
+  /* Ensure trailing slash, see https://bit.ly/3rL5u3f */
+  const url = new URL(`${version.version}/`, config.base)
+  return (
+    <li class="md-version__item">
+      <a href={url.toString()} class="md-version__link">
+        {version.title}
+      </a>
+    </li>
+  )
+}
+
+/* ----------------------------------------------------------------------------
  * Functions
  * ------------------------------------------------------------------------- */
 
@@ -61,19 +86,10 @@ export function renderVersionSelector(versions: Version[]): HTMLElement {
   return (
     <div class="md-version">
       <span class="md-version__current">
-        {active.version}
+        {active.title}
       </span>
       <ul class="md-version__list">
-        {versions.map(version => (
-          <li class="md-version__item">
-            <a
-              class="md-version__link"
-              href={`${new URL(version.version, config.base)}`}
-            >
-              {version.title}
-            </a>
-          </li>
-        ))}
+        {versions.map(renderVersion)}
       </ul>
     </div>
   )
